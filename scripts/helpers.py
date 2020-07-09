@@ -1,4 +1,4 @@
-#!./venv/bin/python
+#!/Users/yapengwu/.virtualenvs/vegalab/bin/python
 
 from secrets import creds
 from nornir import InitNornir
@@ -21,7 +21,7 @@ def adapt_user_password(host):
 
 nr = InitNornir(config_file="./config.yaml")
 
-nb_url, nb_token, ssl_verify = nr.config.inventory.options.values()
+nb_url, nb_token, ssl_verify, filter_parameters = nr.config.inventory.options.values()
 nb_host = re.sub("^.*//|:.*$", "", nb_url)
 
 

@@ -5,8 +5,9 @@ core:
 inventory:
   plugin: nornir.plugins.inventory.netbox.NBInventory
   options:
-    nb_url: 'http://172.29.236.139:32768'
-    nb_token: 'c6d10bb5a03e11120719b2a704409b4a4a7bd004'
+    nb_url: 'http://localhost:32768'
+    nb_token: 'e3e10b2596b6f2d0166045e051857aaf5925a004'
     ssl_verify: False
+    filter_parameters: {'hostname': '192.168.253.137'}
   transform_function: "helpers.adapt_user_password"
 
