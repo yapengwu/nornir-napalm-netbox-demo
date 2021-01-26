@@ -1,0 +1,135 @@
+---
+csr_17:
+  hostname: 192.168.253.138
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-pe-router
+
+csr_18:
+  hostname: 192.168.253.140
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-pe-router
+
+csr_19:
+  hostname: 192.168.253.136
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-p-router
+
+csr_20:
+  hostname: 192.168.253.139
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-p-router
+
+csr_21:
+  hostname: 192.168.253.131
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-pe-router
+
+csr_22:
+  hostname: 192.168.253.137
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-core
+    role: core-pe-router
+
+building-01-23:
+  hostname: 192.168.253.147
+  platform: ios
+  username: cisco
+  password: cisco
+  data:
+    site: campus-building-1
+    role: campus-access
+
+building-01-25:
+  hostname: 192.168.253.145
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: campus-building-1
+    role: campus-aggregate
+
+building-01-26:
+  hostname: 192.168.253.144
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: campus-building-1
+    role: campus-aggregate
+
+leaf-1:
+  hostname: 192.168.253.203
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-leaf
+
+leaf-2:
+  hostname: 192.168.253.204
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-leaf
+
+leaf-3:
+  hostname: 192.168.253.205
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-leaf
+
+leaf-4:
+  hostname: 192.168.253.206
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-leaf
+
+spine-1:
+  hostname: 192.168.253.201
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-spine
+
+spine-2:
+  hostname: 192.168.253.202
+  platform: eos
+  username: admin
+  password: admin
+  data:
+    site: dc-1
+    role: dc-spine

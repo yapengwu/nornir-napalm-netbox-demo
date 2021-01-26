@@ -33,7 +33,8 @@ nr = InitNornir(
     config_file="./config.yaml"
 )
 #nr = nr.filter(platform="ios")
-nr = nr.filter((F(site="dc-1") | F(site="campus-core")) & ~F(role="oob-management"))
+#nr = nr.filter((F(site="dc-1") | F(site="campus-core")) & ~F(role="oob-management"))
+nr = nr.filter((F(site="dc-1")) & ~F(role="oob-management"))
 pprint.pprint(Inventory.serialize(nr.inventory).dict())
 
 agg_result=nr.run(

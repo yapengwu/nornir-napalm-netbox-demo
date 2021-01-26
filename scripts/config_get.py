@@ -9,7 +9,8 @@ norn = InitNornir(
     config_file="./config.yaml"
 )
 #norn = norn.filter(platform="ios")
-norn = norn.filter((F(site="dc-1") | F(site="campus-core")) & ~F(role="oob-management"))
+norn = norn.filter((F(site="campus-building-1") | F(site="dc-1") | F(site="campus-core")) & ~F(role="oob-management"))
+#norn = norn.filter((F(site="dc-11")) & ~F(role="oob-management"))
 
 #import ipdb; ipdb.set_trace()
 
